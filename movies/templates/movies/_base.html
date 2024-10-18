@@ -1,0 +1,10 @@
+<!-- This is page can act as a template "and" we brought 2 href from index here -->
+<html>
+    <body>
+        <div>
+            <a href="{% url 'home' %}">Fav movies</a> <!-- we can use some symbols here such / > ... to use between fav movie and about -->
+            <a href="{% url 'about' %}">About</a> <!-- if we write like that we can change the name easily in our url and not fixing here -->
+        </div>
+        {% block content %} {% endblock %}
+    <body>
+<html>

@@ -1,0 +1,19 @@
+<!-- for inheriting from _base.html   -->
+{% extends 'movies/_base.html' %}
+<html>
+    <body>
+        {% block content %}
+        <h1>My Fav Movies!</h1>
+        {% if movies %}
+            <ul>
+                {% for movie in movies %}
+                    <li>{{ movie|title }}</li> <!-- The title filter is used to convert the string into "Title Case" (capitalizing the first letter of every word). It modifies the value of movie before displaying it.-->
+                {% endfor %}
+            </ul>
+        {% else %}
+             <p>No Favorite Movies ..</p>
+        {% endif %}
+        {% endblock %}
+
+    </body>
+</html>
