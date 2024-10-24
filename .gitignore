@@ -94,6 +94,8 @@ static/
 media/
 static_movie/
 movie/static_movie/
+movie/static/
+movies/static/
 # mkdocs documentation
 /site
 # mypy
