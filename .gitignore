@@ -96,6 +96,10 @@ static_movie/
 movie/static_movie/
 movie/static/
 movies/static/
+
+# Allow specific static files in your movies app
+!movies/static/   # Allow tracking of files in this specific directory
+
 # mkdocs documentation
 /site
 # mypy
