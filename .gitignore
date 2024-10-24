@@ -95,10 +95,11 @@ media/
 static_movie/
 movie/static_movie/
 movie/static/
-movies/static/
+# Ignore the static directory but allow specific files
+movies/static/   # Ignore everything in movies/static/
 
 # Allow specific static files in your movies app
-!movies/static/   # Allow tracking of files in this specific directory
+!movies/static/Screenshot_1.jpg   # Allow tracking of files in this specific directory
 
 # mkdocs documentation
 /site
